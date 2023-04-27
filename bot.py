@@ -13,7 +13,7 @@ def my_code(update, context):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--no-sandbox")
     options.add_argument("--remote-debugging-port=9222")
-    driver = webdriver.Chrome(executable_path=r'D:\Python Projects\blackout bot\chromedriver.exe', options=options)
+    driver = webdriver.Chrome(executable_path=r'Path\to\chromedriver.exe', options=options) # Add the path to the webdriver here
     driver.get('https://cebcare.ceb.lk/Incognito/DemandMgmtSchedule')
 
     timeSchedule = []
@@ -35,7 +35,7 @@ def my_code(update, context):
 
 
     pass
-updater = Updater("5841110404:AAGEi6liSGEzAmB4rPgIwv0QwrGUUaHgdLI", use_context=True)
+updater = Updater("API_KEY", use_context=True) # Replace API_KEY with your API key for telegram bots. this can be retrieved from Bot-Father on telegram
 dp = updater.dispatcher
 dp.add_handler(CommandHandler("start", start))
 dp.add_handler(MessageHandler(Filters.text, my_code))

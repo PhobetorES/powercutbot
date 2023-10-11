@@ -4,3 +4,4 @@ using Selenium & telegram APIs
 
 Code is done with easier to understand variaables.
 Please wait for a detailed documentation. I'll add one as soon as I can
+The API code snippet might change with the times :)
